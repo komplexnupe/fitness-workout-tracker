@@ -23,6 +23,9 @@ const WorkoutSchema = new Schema({
            type: Number,
            required: "Duration is required"
         },
+        distance: {
+            type: Number,
+         },
         weight: {
             type: Number
         },
@@ -31,7 +34,7 @@ const WorkoutSchema = new Schema({
         },
         sets: {
             type: Number
-      }
+      }, 
     }
     ]
 },
