@@ -24,9 +24,9 @@ mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/fitness-tracker
 });
 
 // Requiring our routes
-app.use(require("./routes/html-routes"));
-app.use(require("./routes/api-routes"));
+app.use(require("./controllers/html-controllers"));
+app.use(require("./controllers/api-controllers"));
 
 app.listen(PORT, () => {
-  console.log(`App running on https://localhost:${PORT}!`);
+  console.log(`App running on http://localhost:${PORT}!`);
 });
